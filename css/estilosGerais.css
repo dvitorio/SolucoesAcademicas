@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url('/img/img4.jpg');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.containerGeral{
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 2200;
+}
+
+.nav {
+    width: 100vw !important;
+}
+
+.navbar {
+    background-color: black !important
+}
+
+.navbar a:hover {
+    color: orange !important;
+}
+
+#btnMenuContato {
+    border: none;
+    color: black !important;
+}
+
+#btnMenuContato:hover {
+    background-color: orangered;
+    border: none;
+    color: white !important;
+}
+
+.logo h1 {
+    color: whitesmoke !important;
+    font-size: 1.5rem;
+}
+
+.primeiraPagina {
+    width: 100vw;
+    min-height: 90vh;
+    background-image: url('/img/img3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.primeiraPaginaFrase h1 {
+    font-size: 3rem;
+}
+
+.primeiraPaginaFrase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.formulario {
+    backdrop-filter: blur(15px);
+    min-height: 70vh;
+    width: 30vw;
+    border: 0.4px solid grey !important;
+}
+
+.equipe {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.equipe p {
+    width: 50vw;
+    line-height: 2rem;
+}
+
+.equipe img {
+    max-width: 50%;
+    border-radius: 0.3125rem;
+}
+
+.servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 95vh;
+    background-image: url('/img/img5.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.servicos img {
+    max-width: 100%
+}
+
+.servico {
+    border: 0.5px solid grey !important;
+    width: 27rem;
+    min-height: 70vh;
+    margin: 0.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.servico a,
+.call-to-action a {
+    width: fit-content !important
+}
+
+.servico p {
+    text-shadow: 1px 1px 1px black !important
+}
+
+.call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 90vh;
+}
+
+.call-to-action p {
+    line-height: 2.5rem;
+}
+
+.artigo{
+    background-color: white;
+    position: absolute;
+    width: 45rem;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.375rem;
+}
+
+.artigo p{
+    font-size: 0.9rem;
+}
+
+.rodape {
+    background-color: rgb(18, 17, 17);
+    width: 100vw;
+    height: 12rem;
+}
+
+.rodape h6 {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+
+
+
+
+/*Resolução de telas até 480px*/
+@media screen and (max-width: 30rem) {
+    .primeiraPagina {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .primeiraPaginaImagem {
+        width: 100vw;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .primeiraPaginaImagem img {
+        max-width: 95%;
+        margin: 0 auto !important;
+    }
+
+    .primeiraPaginaFrase h1 {
+        text-align: center;
+        font-size: 1.75rem;
+    }
+
+    .formulario {
+        width: 96vw !important;
+        margin: 0 auto !important;
+    }
+
+    .equipe {
+        width: 100vw !important;
+    }
+
+    .equipe h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .equipe img {
+        max-width: 90%;
+    }
+
+    .equipe p {
+        font-size: 0.9rem;
+        line-height: 1.75rem;
+        width: 99vw;
+        margin: 0 auto !important;
+    }
+
+    .servicos {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .servico {
+        width: 99vw;
+        height: auto;
+    }
+
+    .servico p {
+        font-size: 0.9rem;
+        margin: 0.5rem;
+    }
+
+    .call-to-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse !important;
+    }
+
+    .call-to-action p {
+        font-size: 0.85rem;
+        line-height: 1.75rem;
+        margin: 0 auto;
+    }
+
+    .call-to-action h2{
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .call-to-action h3 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .artigo{
+        max-width: 100vw;
+    }
+}
