@@ -22,6 +22,7 @@
 
 <body>
 
+    <!--Modal de artigo-->
     <div class="artigo container d-none shadow" id="artigo">
         <h5 class="font-weight-bold my-3 text-center">Artigo científico</h5>
         <p class="my-3 text-justify text-secondary mx-2">O artigo científico é um documento mais curto (10 a 25
@@ -39,6 +40,25 @@
         <button class="btn btn-danger mb-3" id="btnFecharModalArtigo">Fechar</button>
     </div>
 
+    <!--Modal de monografia-->
+    <div class="monografia container shadow" id="monografia">
+        <h5 class="font-weight-bold my-3 text-center">Artigo científico</h5>
+        <p class="my-3 text-justify text-secondary mx-2">O artigo científico é um documento mais curto (10 a 25
+            laudas em média), focado em
+            contribuir para a pesquisa acadêmica e destinado à publicação em revistas científicas, tem um objetivo
+            mais específico, geralmente contribuindo para a pesquisa acadêmica em uma área particular. É muitas
+            vezes usado para comunicar resultados de pesquisas originais, experimentos, estudos de caso ou revisões
+            sistemáticas em revistas científicas.
+        </p>
+        <p class="my-3 text-justify text-secondary mx-2">Os artigos científicos geralmente seguem um formato mais
+            padronizado, com seções como resumo, introdução, metodologia, resultados, discussão e conclusão. Esse
+            formato facilita a leitura e a compreensão rápida do conteúdo.
+        </p>
+        <button class="btn btn-primary mb-3">Contratar um artigo</button>
+        <button class="btn btn-danger mb-3" id="btnFecharModalArtigo">Fechar</button>
+    </div>
+
+    <!--Container geral do site-->
     <div class="containerGeral" id="containerGeral">
         <!--Navegação-->
         <header>
@@ -135,16 +155,14 @@
         </div>
 
         <!--Seção de Equipe-->
-        <div class="container equipe" id="equipe">
+        <div class="equipe py-4" id="equipe">
             <div class="col">
                 <h2 class="h2 my-3 text-center text-secondary">Um time de especialistas</h2>
             </div>
             <p class="container text-justify text-secondary">
                 Na <span class="text-secondary"><b>Soluções Acadêmicas</b></span>, acreditamos que o sucesso acadêmico
-                dos
-                nossos clientes é impulsionado
-                pela qualidade e experiência da nossa equipe. Somos um grupo dedicado de especialistas acadêmicos
-                apaixonados por ajudar estudantes universitários a atingir seus objetivos educacionais.</br>
+                dos nossos clientes é impulsionado pela qualidade e experiência da nossa equipe. Somos um grupo dedicado de especialistas 
+                acadêmicos apaixonados por ajudar estudantes universitários a atingir seus objetivos educacionais.</br>
             </p>
             <img class="d-block img my-4 mx-auto w-100" src="/img/equipe.jpg" width="50">
             <p class="container text-justify text-secondary">
@@ -211,7 +229,7 @@
         <!--Seção para call-to-action-->
         <div class="call-to-action container">
             <div class="row">
-                <div class="col-xl-8 container my-5">
+                <div class="col-xl-6 container my-5">
                     <h2 class="text-danger"><b>Proteja sua integridade acadêmica</b></h2>
                     <h3 class="my-4 text-danger">Não arrisque seu futuro com imitações!</h3>
                     <p class="text-justify text-secondary">
@@ -224,7 +242,7 @@
                     </p>
                     <a class="btn btn-danger my-3">Solicite uma cotação gratuita</a>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-3 container">
                     <img class="d-block img my-3 mx-auto rounded shadow w-100" src="/img/img6.jpg" alt="">
                 </div>
             </div>

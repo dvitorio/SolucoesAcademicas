@@ -76,6 +76,7 @@ body{
 }
 
 .equipe {
+    background-color: white;
     width: 100vw;
     min-height: 100vh;
 }
@@ -128,10 +129,11 @@ p {
 }
 
 .call-to-action {
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    min-width: 100vw;
     min-height: 90vh;
 }
 
@@ -139,7 +141,8 @@ p {
     line-height: 2.5rem;
 }
 
-.artigo{
+.artigo,
+.monografia{
     background-color: white;
     position: absolute;
     width: 45rem;
@@ -148,9 +151,11 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 0.375rem;
+    z-index: 100;
 }
 
-.artigo p{
+.artigo p,
+.monografia p{
     font-size: 0.9rem;
 }
 
