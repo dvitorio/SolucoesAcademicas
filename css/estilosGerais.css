@@ -142,7 +142,9 @@ p {
 }
 
 .artigo,
-.monografia{
+.monografia,
+.dissertacao,
+.projetoTCC{
     background-color: white;
     position: absolute;
     width: 45rem;
@@ -151,11 +153,13 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 0.375rem;
-    z-index: 100;
+    z-index: 150;
 }
 
 .artigo p,
-.monografia p{
+.monografia p,
+.dissertacao p,
+.projetoTCC p{
     font-size: 0.9rem;
 }
 

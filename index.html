@@ -22,39 +22,6 @@
 
 <body>
 
-    <!--Modal de artigo-->
-    <div class="artigo container d-none shadow" id="artigo">
-        <h5 class="font-weight-bold my-3 text-center">Artigo científico</h5>
-        <p class="my-3 text-justify text-secondary mx-2">O artigo científico é um documento mais curto (10 a 25
-            laudas em média), focado em
-            contribuir para a pesquisa acadêmica e destinado à publicação em revistas científicas, tem um objetivo
-            mais específico, geralmente contribuindo para a pesquisa acadêmica em uma área particular. É muitas
-            vezes usado para comunicar resultados de pesquisas originais, experimentos, estudos de caso ou revisões
-            sistemáticas em revistas científicas.
-        </p>
-        <p class="my-3 text-justify text-secondary mx-2">Os artigos científicos geralmente seguem um formato mais
-            padronizado, com seções como resumo, introdução, metodologia, resultados, discussão e conclusão. Esse
-            formato facilita a leitura e a compreensão rápida do conteúdo.
-        </p>
-        <button class="btn btn-primary mb-3">Contratar um artigo</button>
-        <button class="btn btn-danger mb-3" id="btnFecharModalArtigo">Fechar</button>
-    </div>
-
-    <!--Modal de monografia-->
-    <div class="monografia container d-none shadow" id="monografia">
-        <h5 class="font-weight-bold my-3 text-center">Monografia</h5>
-        <p class="my-3 text-justify text-secondary mx-2">A monografia é um trabalho acadêmico mais extenso e abrangente,
-            muitas vezes realizado como um requisito final de conclusão de curso em níveis de graduação e pós-graduação.
-            Ela geralmente busca aprofundar em um tópico específico e pode incluir uma revisão abrangente da literatura
-            existente.
-        </p>
-        <p class="my-3 text-justify text-secondary mx-2">Uma monografia segue um formato mais flexível, muitas vezes
-            incluindo várias seções, como introdução, revisão de literatura, metodologia, resultados, discussão e
-            conclusão.
-        </p>
-        <button class="btn btn-primary mb-3">Contratar uma monografia</button>
-        <button class="btn btn-danger mb-3" id="btnFecharModalArtigo">Fechar</button>
-    </div>
 
     <!--Container geral do site-->
     <div class="containerGeral" id="containerGeral">
@@ -83,9 +50,9 @@
                             </a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#artigo" id="btnArtigo">Artigo</a>
-                                <a class="dropdown-item" href="#dissertacao">Dissertação</a>
-                                <a class="dropdown-item" href="#monografia">Monografia</a>
-                                <a class="dropdown-item" href="#projeto">Projeto</a>
+                                <a class="dropdown-item" href="#dissertacao" id="btnDissertacao">Dissertação</a>
+                                <a class="dropdown-item" href="#monografia" id="btnMonografia">Monografia</a>
+                                <a class="dropdown-item" href="#projetoTCC" id="btnProjetoTCC">Projeto de TCC</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#trabalhoGeral">Trabalhos em geral</a>
                             </div>
@@ -246,6 +213,77 @@
                 </div>
             </div>
         </div>
+
+        <!--Modal de artigo-->
+        <div class="artigo container d-none shadow" id="artigo">
+            <h5 class="font-weight-bold my-3 text-center">Artigo científico</h5>
+            <p class="my-3 text-justify text-dark mx-2">O artigo científico é um documento mais curto (10 a 25
+                laudas em média), focado em
+                contribuir para a pesquisa acadêmica e destinado à publicação em revistas científicas, tem um objetivo
+                mais específico, geralmente contribuindo para a pesquisa acadêmica em uma área particular. É muitas
+                vezes usado para comunicar resultados de pesquisas originais, experimentos, estudos de caso ou revisões
+                sistemáticas em revistas científicas.
+            </p>
+            <p class="my-3 text-justify text-dark mx-2">Os artigos científicos geralmente seguem um formato mais
+                padronizado, com seções como resumo, introdução, metodologia, resultados, discussão e conclusão. Esse
+                formato facilita a leitura e a compreensão rápida do conteúdo.
+            </p>
+            <button class="btn btn-primary mb-3">Contratar um artigo</button>
+            <button class="btn btn-danger mb-3" id="btnFecharModalArtigo">Fechar</button>
+        </div>
+
+        <!--Modal de monografia-->
+        <div class="monografia container d-none shadow" id="monografia">
+            <h5 class="font-weight-bold my-3 text-center">Monografia</h5>
+            <p class="my-3 text-justify text-dark mx-2">A monografia é um trabalho acadêmico mais extenso (<b>mais
+                    de 25 laudas, no mínimo</b>) e abrangente,
+                muitas vezes realizado como um requisito final de conclusão de curso em níveis de graduação e
+                pós-graduação. Ela geralmente busca aprofundar em um tópico específico e pode incluir uma revisão
+                abrangente da
+                literatura existente.
+            </p>
+            <p class="my-3 text-justify text-dark mx-2">Uma monografia segue um formato mais flexível, muitas vezes
+                incluindo várias seções, como introdução, revisão de literatura, metodologia, resultados, discussão e
+                conclusão.
+            </p>
+            <button class="btn btn-primary mb-3">Iniciar uma monografia</button>
+            <button class="btn btn-danger mb-3" id="btnFecharModalMonografia">Fechar</button>
+        </div>
+
+        <!--Modal de Dissertação-->
+        <div class="dissertacao container d-none shadow" id="dissertacao">
+            <h5 class="font-weight-bold my-3 text-center">Dissertação</h5>
+            <p class="my-3 text-justify text-dark mx-2">Uma dissertação é um tipo de trabalho acadêmico que tem
+                características distintas e é geralmente associada a programas de pós-graduação, como mestrado e
+                doutorado
+                (tese).
+                Exige a realização de uma pesquisa original em um campo específico de estudo. Os candidatos ao grau de
+                mestrado ou doutorado
+                são esperados para fazer uma contribuição significativa ao conhecimento existente em sua área.
+            </p>
+            <p class="my-3 text-justify text-dark mx-2">As dissertações são um componente importante da pesquisa
+                acadêmica e servem como uma demonstração do domínio de um tópico e da capacidade de realizar pesquisa
+                independente. Elas também são uma etapa fundamental em programas de pós-graduação e podem ser usadas
+                como
+                base para futuras pesquisas e publicações acadêmicas.
+            </p>
+            <button class="btn btn-primary mb-3">Orçamento</button>
+            <button class="btn btn-danger mb-3" id="btnFecharModalDissertacao">Fechar</button>
+        </div>
+
+        <!--Modal de projeto de TCC-->
+        <div class="projetoTCC container d-none shadow" id="projetoTCC">
+            <h5 class="font-weight-bold my-3 text-center">Projeto de TCC</h5>
+            <p class="my-3 text-justify text-dark mx-2">Um Projeto de Trabalho de Conclusão de Curso (TCC) é uma
+                etapa crucial na preparação para a elaboração do TCC em si. É como se fosse a "planta" de construção de
+                um TCC (artigo, dissertação ou monografia) e necessariamente precisa ter: justificativa, objetivos, hipótese, revisão de
+                literatura, metodologia, cronograma, recursos, orçamento e bibliografia. Ou seja, é o roteiro a ser seguido para preparação da pesquisa e escrita do TCC final, e uma boa preparação
+                pode facilitar todo o processo.
+            </p>
+            <button class="btn btn-primary mb-3">Iniciar projeto de TCC</button>
+            <button class="btn btn-danger mb-3" id="btnFecharModalProjetoTCC">Fechar</button>
+        </div>
+
 
 
         <!--Seção rodapé-->
