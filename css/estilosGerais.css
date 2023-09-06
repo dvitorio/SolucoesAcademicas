@@ -18,7 +18,7 @@ body{
 .containerGeral{
     width: 100vw;
     min-height: 100vh;
-    z-index: 2200;
+    z-index: 2200 !important;
 }
 
 .nav {
@@ -141,7 +141,7 @@ p {
     line-height: 2.5rem;
 }
 
-.artigo,
+.modalArtigo,
 .monografia,
 .dissertacao,
 .projetoTCC{
@@ -153,10 +153,10 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 0.375rem;
-    z-index: 150;
+    z-index: 5000;
 }
 
-.artigo p,
+.modalArtigo p,
 .monografia p,
 .dissertacao p,
 .projetoTCC p{
