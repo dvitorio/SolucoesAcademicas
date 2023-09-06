@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="/css/estilosGerais.css" defer>
     <!--Favicon-->
     <link rel="icon" type="image/png" href="/img/capelo.png">
+    <!--AOS CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,7 +44,7 @@
     </div>
 
     <!--Modal de monografia-->
-    <div class="monografia container d-none shadow" id="modalMonografia">
+    <div class="modalMonografia container d-none shadow" id="modalMonografia">
         <h5 class="font-weight-bold my-3 text-center">Monografia</h5>
         <p class="my-3 text-justify text-dark mx-2">A monografia é um trabalho acadêmico mais extenso (<b>mais
                 de 25 laudas, no mínimo</b>) e abrangente,
@@ -60,7 +62,7 @@
     </div>
 
     <!--Modal de Dissertação-->
-    <div class="dissertacao container d-none shadow" id="modalDissertacao">
+    <div class="modalDissertacao container d-none shadow" id="modalDissertacao">
         <h5 class="font-weight-bold my-3 text-center">Dissertação</h5>
         <p class="my-3 text-justify text-dark mx-2">Uma dissertação é um tipo de trabalho acadêmico que tem
             características distintas e é geralmente associada a programas de pós-graduação, como mestrado e
@@ -81,7 +83,7 @@
     </div>
 
     <!--Modal de projeto de TCC-->
-    <div class="projetoTCC container d-none shadow" id="modalProjetoTCC">
+    <div class="modalProjetoTCC container d-none shadow" id="modalProjetoTCC">
         <h5 class="font-weight-bold my-3 text-center">Projeto de TCC</h5>
         <p class="my-3 text-justify text-dark mx-2">Um Projeto de Trabalho de Conclusão de Curso (TCC) é uma
             etapa crucial na preparação para a elaboração do TCC em si. É como se fosse a "planta" de construção de
@@ -191,18 +193,18 @@
         </div>
 
         <!--Seção de Equipe-->
-        <div class="equipe py-4" id="equipe">
+        <div class="equipe py-4" id="equipe" data-aos="fade-up" data-aos-duration="2000">
             <div class="col">
-                <h2 class="h2 my-3 text-center text-secondary">Um time de especialistas</h2>
+                <h2 class="h2 my-3 text-center text-secondary" data-aos="fade-up" data-aos-duration="2000">Um time de especialistas</h2>
             </div>
-            <p class="container text-justify text-secondary">
+            <p class="container text-justify text-secondary" data-aos="fade-up" data-aos-duration="2000">
                 Na <span class="text-secondary"><b>Soluções Acadêmicas</b></span>, acreditamos que o sucesso acadêmico
                 dos nossos clientes é impulsionado pela qualidade e experiência da nossa equipe. Somos um grupo dedicado
                 de especialistas
                 acadêmicos apaixonados por ajudar estudantes universitários a atingir seus objetivos educacionais.</br>
             </p>
             <img class="d-block img my-4 mx-auto w-100" src="/img/equipe.jpg" width="50">
-            <p class="container text-justify text-secondary">
+            <p class="container text-justify text-secondary" data-aos="fade-up" data-aos-duration="2000">
                 Temos especialistas
                 nas áreas de Ciências Exatas, Ciências Humanas, Ciências da Natureza e Artes, o que faz do nosso
                 serviço ter a
@@ -214,7 +216,7 @@
                 personalizado em todas as etapas do processo acadêmico.
                 <br />
             </p>
-            <p class="container text-justify text-secondary">
+            <p class="container text-justify text-secondary" data-aos="fade-up" data-aos-duration="2000">
                 Conte com a <span class="text-secondary"><b>Soluções Acadêmicas</b></span> para ajudá-lo a alcançar o
                 sucesso em seus trabalhos acadêmicos.
                 Estamos ansiosos para trabalhar com você e ser parte do seu sucesso na sua instituição de ensino!
@@ -225,22 +227,21 @@
 
         <!--Seção de serviços-->
         <div class="servicos" id="servicos">
-            <div class="border servico rounded">
+            <div class="border servico rounded" data-aos="fade-up" data-aos-duration="2000">
                 <img class="d-block my-3 mx-auto" src="/img/escrita.png" width="45">
-                <h5 class="text-center text-white">Mentoria em escrita acadêmica</h5>
-                <p class="my-3 text-justify text-white mx-4">
+                <h5 class="text-center text-white" data-aos="fade-up">Mentoria em escrita acadêmica</h5>
+                <p class="my-3 text-justify text-white mx-4" data-aos="fade-up" data-aos-duration="2000">
                     Oferecemos mentoria em escrita acadêmica, feito sob medida para atender às necessidades dos estudantes
-                    universitários em sua busca por excelência no seu trabalho científico. Sabemos que a escrita acadêmica pode ser
-                    desafiadora, muitas vezes exigindo tempo, pesquisa aprofundada e habilidades específicas de
-                    formatação. É aí que entramos. Deixe a escrita conosco, e concentre foco e energia em outras
-                    disciplinas!
+                    universitários em sua busca por excelência no seu trabalho científico. Sabemos que o processo de escrita pode ser
+                    desafiador, muitas vezes exigindo tempo, pesquisa aprofundada e habilidades específicas de
+                    formatação. É aí que entramos. 
                 </p>
                 <button class="d-block mb-3 mx-auto btn btn-light">Contrate agora</button>
             </div>
-            <div class="border servico rounded">
+            <div class="border servico rounded" data-aos="fade-up" data-aos-duration="2000">
                 <img class="d-block my-3 mx-auto" src="/img/ajustes.png" width="45">
                 <h5 class="text-center text-white">Ajustes e correções</h5>
-                <p class="my-3 text-justify text-white mx-4">
+                <p class="my-3 text-justify text-white mx-4" data-aos="fade-up" data-aos-duration="2000">
                     Um trabalho acadêmico bem escrito deve ser totalmente livre de
                     erros de grafia e gramaticais. Nossa equipe de especialistas em ajustes e correções está aqui para
                     ajudá-lo a aprimorar a
@@ -249,10 +250,10 @@
                 </p>
                 <button class="d-block mb-3 mx-auto btn btn-light">Peça uma revisão</button>
             </div>
-            <div class="border servico rounded">
+            <div class="border servico rounded" data-aos="fade-up" data-aos-duration="2000">
                 <img class="d-block my-3 mx-auto" src="/img/normalizacao.png" width="45">
-                <h5 class="text-center text-white">Normalização</h5>
-                <p class="my-3 text-justify text-white mx-4">
+                <h5 class="text-center text-white" data-aos="fade-up" data-aos-duration="2000">Normalização</h5>
+                <p class="my-3 text-justify text-white mx-4" data-aos="fade-up" data-aos-duration="2000">
                     Nos certificamos que seu trabalho esteja formatado de acordo com as normas
                     acadêmicas, incluindo margens, espaçamento, tamanho da fonte e estilo de parágrafo. Verificamos e
                     ajustamos suas citações e referências para garantir que estejam em conformidade com os estilos de
@@ -308,6 +309,11 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
     <script src="/js/index.js" defer></script>
+    <!--AOS JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
