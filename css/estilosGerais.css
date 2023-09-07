@@ -51,7 +51,7 @@ body {
 
 .primeiraPagina {
     width: 100vw;
-    min-height: 90vh;
+    height: 90vh;
     background-image: url('/img/img3.jpg');
     background-size: cover;
     background-position: center;
@@ -165,6 +165,36 @@ p {
     font-size: 0.9rem;
 }
 
+.depoimentos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f3ec;
+    width: 100vw;
+    height: 90vh;
+}
+
+.depoimento{
+    background-color: #ffffff;
+    width: 18rem;
+    height: 30rem;
+}
+
+.depoimento p{
+    font-size: 0.9rem;
+    line-height: 1.75rem;
+}
+
+.depoimento:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.depoimento p:hover{
+    color: cornflowerblue !important;
+    margin: 0 auto !important;
+}
+
 .rodape {
     background-color: rgb(18, 17, 17);
     width: 100vw;
@@ -207,7 +237,7 @@ p {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: auto;
+        height: auto !important;
     }
 
     .primeiraPaginaImagem {
@@ -305,6 +335,29 @@ p {
     .modalDissertacao p,
     .modalProjetoTCC p {
         font-size: 0.9rem;
+    }
+
+    .depoimentos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .depoimento{
+        width: 99vw !important;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .depoimento p{
+        font-size: 0.8rem;
+        line-height: 2rem;
+    }
+
+    .depoimento:hover{
+        transform: scale(1.07);
     }
 
 }
