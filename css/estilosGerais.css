@@ -168,7 +168,7 @@ p {
 .rodape {
     background-color: rgb(18, 17, 17);
     width: 100vw;
-    height: 12rem;
+    height: 8rem;
 }
 
 .rodape h6 {
@@ -177,6 +177,21 @@ p {
     font-weight: 200;
 }
 
+.rodape a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.midiasRodape{
+    align-items: center;
+    justify-content: center;
+}
+
+.midiasRodape i{
+    color: rgb(187, 174, 174) !important;
+    font-size: 1.5rem;
+    font-weight: 100 !important;
+}
 
 
 
@@ -280,7 +295,7 @@ p {
     .modalProjetoTCC {
         position: absolute;
         max-width: 99vw;
-        min-height: 100vh !important;
+        height: fit-content !important;
         padding: 1rem 0.5rem !important;
         margin: 0.5rem auto !important;
     }
