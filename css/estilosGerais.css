@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Raleway:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;700&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -9,6 +13,14 @@ html {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+}
+
+.centerColumn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .containerGeral {
@@ -141,7 +153,7 @@ p {
 .modalMonografia,
 .modalDissertacao,
 .modalProjetoTCC {
-    background-color: white;
+    background-color: #ffffff;
     position: absolute;
     width: 45rem;
     height: auto !important;
@@ -191,13 +203,61 @@ p {
     margin: 0 auto !important;
 }
 
+.contadores{
+    width: 100vw;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: "1fr 1fr 1fr";
+    grid-template-rows: auto;
+    grid-template-areas: "contadorTitulo contadorTitulo contadorTitulo"
+                         "contador1 contador2 contador3";
+    gap: 0.3125rem;
+    background-color: whitesmoke;
+}
+
+.contadorTitulo{
+    grid-area: contadorTitulo;
+    width: 100vw;
+    height: 1.5rem;
+}
+
+.contador1{
+    background-color: #ffffff;
+    grid-area: contador1;
+    width: 30vw;
+    height: 50vh;
+}
+
+.contador2{
+    background-color: #ffffff;
+    grid-area: contador2;
+    width: 30vw;
+    height: 50vh;
+}
+
+.contador3{
+    background-color: #ffffff;
+    grid-area: contador3;
+    width: 30vw;
+    height: 50vh;
+}
+
+.contador1 span,
+.contador2 span,
+.contador3 span{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contadorTexto{
+    font-size: 4.5rem !important;
+}
+
 .direitosAutorais{
     display: grid;
     grid-template-columns: "1fr 1fr";
     grid-template-rows: auto;
     grid-template-areas: "direitoAutoral1 direitoFrase1"
-                         " direitoFrase2 direitoAutoral2"
-                         "direitoAutoral3 direitoFrase3";
+                         " direitoFrase2 direitoAutoral2";
     width: 100vw;
     min-height: 100vh;
 }
@@ -231,18 +291,6 @@ p {
 .direitoFrase2{
     grid-area: direitoFrase2;
     width: 45vw;
-    height: auto;
-}
-
-.direitoAutoral3{
-    grid-area: direitoAutoral3;
-    width: 45vw;
-    height: 45vh;
-}
-
-.direitoFrase3{
-    grid-area: direitoFrase3;
-    width: 40vw;
     height: auto;
 }
 
@@ -409,6 +457,25 @@ p {
 
     .depoimento:hover{
         transform: scale(1.07);
+    }
+
+    .contadores{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+    }
+
+    .contadorTitulo{
+        height: auto;
+    }
+
+    .contador1,
+    .contador2,
+    .contador3{
+        width: 95vw;
+        height: auto;
+        margin: 0.5rem !important;
     }
 
     .direitosAutorais{

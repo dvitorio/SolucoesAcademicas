@@ -39,7 +39,7 @@
             padronizado, com seções como resumo, introdução, metodologia, resultados, discussão e conclusão. Esse
             formato facilita a leitura e a compreensão rápida do conteúdo.
         </p>
-        <button class="btn btn-primary mb-3">Contratar um artigo</button>
+        <button class="btn btn-primary mb-3" id="btnContratarArtigo">Contratar um artigo</button>
         <button class="btn btn-danger mb-3" id="btnFecharModalArtigo">Fechar</button>
     </div>
 
@@ -151,16 +151,16 @@
                         acadêmico</h1>
                 </div>
                 <div class="col-xl-3 formulario my-4 rounded shadow">
-                    <form action="">
+                    <form action="https://formspree.io/solucoesacademicas21@gmail.com" method="post">
                         <h6 class="py-3 text-white text-center">Faça um orçamento sem compromisso</h6>
-                        <input class="form-control" type="text" placeholder="Nome completo">
-                        <input class="form-control my-4" type="email" placeholder="E-mail principal">
+                        <input class="form-control" type="text" name="nome" placeholder="Nome completo">
+                        <input class="form-control my-4" type="email" name="_replyto" placeholder="E-mail principal">
                         <div class="row">
                             <div class="col-xl-5">
-                                <input class="form-control mb-4" type="tel" placeholder="Celular">
+                                <input class="form-control mb-4" type="tel" name="telefone" placeholder="Celular">
                             </div>
                             <div class="col-xl-7">
-                                <select class="form-control mb-4" name="" id="">
+                                <select class="form-control mb-4" name="interesse" id="interesse">
                                     <option value="" disabled selected>Interesse</option>
                                     <option value="artigo">Artigo</option>
                                     <option value="dissertacao">Dissertação</option>
@@ -172,7 +172,7 @@
                                 </select>
                             </div>
                         </div>
-                        <select class="form-control mb-4" name="" id="">
+                        <select class="form-control mb-4" name="curso" id="curso">
                             <option value="" selected disabled>Curso</option>
                             <option value="administracao">Administração</option>
                             <option value="contabeis">Ciências Contábeis</option>
@@ -185,10 +185,10 @@
                             <option value="pedagogia">Pedagogia</option>
                             <option value="outro">Outro curso</option>
                         </select>
-                        <textarea class="form-control" name="" id="" cols="30" rows="4"
+                        <textarea class="form-control" name="mensagem" id="" cols="30" rows="4"
                             placeholder="Deixe aqui sua mensagem..."></textarea>
                     </form>
-                    <button class="btn btn-danger my-3 text-white" id="btnFormPrimeiraPagina">Entrar em
+                    <button class="btn btn-danger my-3 text-white" id="btnFormPrimeiraPagina" type="submit">Entrar em
                         contato</button>
                 </div>
             </div>
@@ -272,7 +272,7 @@
         <!--Seção para call-to-action-->
         <div class="call-to-action container">
             <div class="row">
-                <div class="col-xl-6 container my-5">
+                <div class="col-xl-6 container my-5" data-aos="fade-up" data-aos-duration="1500">
                     <h2 class="text-danger"><b>Proteja sua integridade acadêmica</b></h2>
                     <h3 class="my-4 text-danger">Não se arrisque com plágio e cópia!</h3>
                     <p class="text-justify text-dark">
@@ -287,14 +287,14 @@
                     <a class="btn btn-danger my-3">Solicite uma cotação gratuita</a>
                 </div>
                 <div class="col-xl-3 container">
-                    <img class="d-block img my-3 mx-auto rounded shadow w-100" src="/img/img6.jpg" alt="">
+                    <img class="d-block img my-3 mx-auto rounded shadow w-100" src="/img/img6.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">
                 </div>
             </div>
         </div>
 
         <!--Seção de depoimentos-->
         <div class="depoimentos" id="depoimentos">
-            <div class="depoimento my-4 mx-2 shadow">
+            <div class="depoimento my-4 mx-2 shadow" data-aos="fade-up" data-aos-duration="1500">
                 <h4 class="mb-2 pt-4 text-center text-secondary">Ana Maria S.</h4>
                 <h6 class="text-center text-secondary font-weight-bold">Enfermagem</h6>
                 <p class="pt-3 px-4 text-justify text-dark">"Estou extremamente satisfeita com o serviço de
@@ -305,7 +305,7 @@
                     excelência em seus projetos."
                 </p>
             </div>
-            <div class="depoimento my-4 mx-2 shadow">
+            <div class="depoimento my-4 mx-2 shadow" data-aos="fade-up" data-aos-duration="1500">
                 <h4 class="mb-2 pt-4 text-center text-secondary">Pedro Henrique R.</h4>
                 <h6 class="text-center text-secondary font-weight-bold">Engenharia Mecânica</h6>
                 <p class="pt-3 px-4 text-justify text-dark">"A consultoria de trabalhos acadêmicos me deu a
@@ -316,7 +316,7 @@
                     final e estou muito grato por isso."
                 </p>
             </div>
-            <div class="depoimento my-4 mx-2 shadow">
+            <div class="depoimento my-4 mx-2 shadow" data-aos="fade-up" data-aos-duration="1500">
                 <h4 class="mb-2 pt-4 text-center text-secondary">Camila L.</h4>
                 <h6 class="text-center text-secondary font-weight-bold">Pedagogia</h6>
                 <p class="pt-3 px-4 text-justify text-dark">"Não sei o que teria feito sem o serviço de consultoria
@@ -326,7 +326,7 @@
                     recomendo os serviços da Soluções Acadêmicas a qualquer um de olhos fechados."
                 </p>
             </div>
-            <div class="depoimento my-4 mx-2 shadow">
+            <div class="depoimento my-4 mx-2 shadow" data-aos="fade-up" data-aos-duration="1500">
                 <h4 class="mb-2 pt-4 text-center text-secondary">Ana Maria S.</h4>
                 <h6 class="text-center text-secondary font-weight-bold">Direito</h6>
                 <p class="pt-3 px-4 text-justify text-dark">"O serviço de consultoria da Soluções Acadêmicas me deu a
@@ -339,14 +339,22 @@
             </div>
         </div>
 
+        <!--Seção dos contadores-->
+        <div class="contadores" id="contadores" data-aos="fade-up" data-aos-duration="1500">
+            <div class="contadorTitulo"><h3 class="pt-4 text-center text-danger">Algumas de nossas marcas...</h3></div>
+            <div class="centerColumn contador1 container rounded shadow text-dark mb-2" id="contador1" data-aos="zoom-in" data-aos-duration="2000">Mais de <span class="contadorTexto font-weight-bold text-danger" data-aos="zoom-in">150</span>artigos produzidos e publicados</div>
+            <div class="centerColumn contador2 container rounded shadow text-dark mb-2" id="contador2" data-aos="zoom-in" data-aos-duration="2000">Cerca de <span class="contadorTexto font-weight-bold text-danger" data-aos="zoom-in">12</span>dissertações aprovadas</div>
+            <div class="centerColumn contador3 container rounded shadow text-dark mb-2" id="contador3" data-aos="zoom-in" data-aos-duration="2000">Aproximadamente <span class="contadorTexto font-weight-bold text-danger" data-aos="zoom-in">120</span>monografias produzidas e aprovadas</div>
+        </div>
+
         <!--Seção de direitos autorais-->
         <div class="direitosAutorais">
             <div class="mx-auto direitoAutoral1">
-                <img class="d-block img p-3 mx-auto" src="/img/direitoAutoral.jpg" alt="">
+                <img class="d-block img my-5 p-3 mx-auto" src="/img/direitoAutoral.jpg" alt="">
             </div>
             <div class="direitoFrase1">
                 <h2 class="mx-4 p-3 text-dark">Somos contra a prática de plágio</h2>
-                <p class="mx-4 px-3 text-secondary text-justify">
+                <p class="mx-4 my-4 px-3 text-secondary text-justify">
                     Na nossa consultoria de trabalhos acadêmicos, valorizamos a integridade acadêmica. Garantimos que
                     cada projeto seja original, respeitando rigorosamente os direitos autorais e protegendo nossos
                     clientes contra qualquer forma de plágio.
@@ -368,8 +376,6 @@
                     autorizada.
                 </p>
             </div>
-            <div class="direitoAutoral3"></div>
-            <div class="direitoFrase3"></div>
         </div>
 
 

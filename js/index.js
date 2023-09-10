@@ -1,4 +1,4 @@
-/**Acesso às variáveis globais */
+/**Inicialização das variáveis globais */
 const btnArtigo = document.getElementById('btnArtigo');
 const btnDissertacao = document.getElementById('btnDissertacao');
 const btnFecharModalArtigo = document.getElementById('btnFecharModalArtigo');
@@ -12,8 +12,7 @@ const modalArtigo = document.getElementById('modalArtigo');
 const modalDissertacao = document.getElementById('modalDissertacao');
 const modalMonografia = document.getElementById('modalMonografia');
 const modalProjetoTCC = document.getElementById('modalProjetoTCC');
-
-
+const btnContratarArtigo = document.getElementById('btnContratarArtigo');
 
 
 
@@ -64,6 +63,8 @@ btnFecharModalProjetoTCC.addEventListener('click', ()=>{
     modalProjetoTCC.classList.add('d-none');
     containerGeral.classList.remove('d-none');
 })
+
+
 
 
 
