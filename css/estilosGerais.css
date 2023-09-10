@@ -40,6 +40,9 @@ html {
 .navbar a:hover {
     color: orange !important;
 }
+.nav-link{
+    font-size: 0.9rem !important;
+}
 
 #btnMenuContato {
     border: none;
@@ -224,21 +227,21 @@ p {
 .contador1{
     background-color: #ffffff;
     grid-area: contador1;
-    width: 30vw;
+    width: 25vw;
     height: 50vh;
 }
 
 .contador2{
     background-color: #ffffff;
     grid-area: contador2;
-    width: 30vw;
+    width: 25vw;
     height: 50vh;
 }
 
 .contador3{
     background-color: #ffffff;
     grid-area: contador3;
-    width: 30vw;
+    width: 25vw;
     height: 50vh;
 }
 
