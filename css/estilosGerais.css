@@ -255,46 +255,28 @@ p {
     font-size: 4.5rem !important;
 }
 
-.direitosAutorais{
-    display: grid;
-    grid-template-columns: "1fr 1fr";
-    grid-template-rows: auto;
-    grid-template-areas: "direitoAutoral1 direitoFrase1"
-                         " direitoFrase2 direitoAutoral2";
+.chamadaPreco{
     width: 100vw;
-    min-height: 100vh;
+    height: 90vh;
 }
 
-.direitoAutoral1{
-    grid-area: direitoAutoral1;
-    width: 45vw;
-    height: 45vh;
-    background-size: cover;
-    overflow: hidden;
+.chamada{
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    height: 8rem;
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.direitoAutoral1 img,
-.direitoAutoral2 img{
-    max-width: 100%;
-    border-radius: 0.3rem !important;
-}
+.chamadaPreco h2{font-size: 3rem}
 
-.direitoFrase1{
-    grid-area: direitoFrase1;
-    width: 55vw;
-    height: auto;
-}
-
-.direitoAutoral2{
-    grid-area: direitoAutoral2;
-    width: 45vw;
-    height: auto;
-}
-
-.direitoFrase2{
-    grid-area: direitoFrase2;
-    width: 45vw;
-    height: auto;
+.chamadaPreco p{
+    border-radius: 30px;
+    width: 30vw;
+    height: 8rem;
 }
 
 .rodape {
@@ -481,45 +463,23 @@ p {
         margin: 0.5rem !important;
     }
 
-    .direitosAutorais{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: auto !important;
-        width: 100vw;
-    }
-
-    .direitosAutorais p{
-        font-size: 0.85rem;
-        line-height: 1.75rem;
-    }
-
-    .direitosAutorais h2{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .direitoAutoral1,
-    .direitoAutoral2,
-    .direitoAutoral3{
+    .chamadaPreco{
         width: 100vw;
         height: auto;
+    }
+
+    .chamadaPreco h2 {
+        font-size: 1.5rem;
+        text-align: center;
         margin: 0 auto !important;
     }
 
-    .direitoAutoral1 img,
-    .direitoAutoral2 img,
-    .direitoAutoral3 img{
-        max-width: 100%;
+    .chamada{
+        font-size: 3rem;
+        width: 90vw;
+        height: 4rem;
     }
 
-    .direitoFrase1,
-    .direitoFrase2,
-    .direitoFrase3{
-        width: 100vw !important;
-        height: auto;
-        margin: 0 auto;
-    }
+
 
 }

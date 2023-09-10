@@ -156,11 +156,11 @@
                 <div class="col-xl-3 formulario my-4 rounded shadow">
                     <form action="https://formspree.io/f/xeqbkbgp" method="post" id="meuFormulario">
                         <h6 class="py-3 text-white text-center">Faça um orçamento sem compromisso</h6>
-                        <input class="form-control" type="text" name="nome" placeholder="Nome completo">
-                        <input class="form-control my-4" type="email" name="_replyto" placeholder="E-mail principal">
+                        <input class="form-control" type="text" name="nome" placeholder="Nome completo" id="nome">
+                        <input class="form-control my-4" type="email" name="_replyto" placeholder="E-mail principal" id="email">
                         <div class="row">
                             <div class="col-xl-5">
-                                <input class="form-control mb-4" type="tel" name="telefone" placeholder="Celular">
+                                <input class="form-control mb-4" type="tel" name="telefone" placeholder="Celular" id="telefone">
                             </div>
                             <div class="col-xl-7">
                                 <select class="form-control mb-4" name="interesse" id="interesse">
@@ -188,9 +188,9 @@
                             <option value="pedagogia">Pedagogia</option>
                             <option value="outro">Outro curso</option>
                         </select>
-                        <textarea class="form-control" name="mensagem" id="" cols="30" rows="4"
+                        <textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="4"
                             placeholder="Deixe aqui sua mensagem..."></textarea>
-                            <button class="btn btn-danger my-3 text-white" id="btnFormPrimeiraPagina" type="submit">Entrar em
+                            <button class="btn btn-danger my-3 text-white" id="btnFormPrimeiraPagina" type="submit" onclick="limparCampos()">Entrar em
                                 contato</button>
                     </form>
                 </div>
@@ -350,35 +350,14 @@
             <div class="centerColumn contador3 container rounded shadow text-dark mb-2" id="contador3" data-aos="zoom-in" data-aos-duration="2000">Aproximadamente <span class="contadorTexto font-weight-bold text-info" data-aos="zoom-in">120</span>monografias produzidas e aprovadas</div>
         </div>
 
-        <!--Seção de direitos autorais-->
-        <div class="direitosAutorais">
-            <div class="mx-auto direitoAutoral1">
-                <img class="d-block img my-5 p-3 mx-auto" src="/img/direitoAutoral.jpg" alt="">
-            </div>
-            <div class="direitoFrase1">
-                <h2 class="mx-4 p-3 text-dark">Somos contra a prática de plágio</h2>
-                <p class="mx-4 my-4 px-3 text-secondary text-justify">
-                    Na nossa consultoria de trabalhos acadêmicos, valorizamos a integridade acadêmica. Garantimos que
-                    cada projeto seja original, respeitando rigorosamente os direitos autorais e protegendo nossos
-                    clientes contra qualquer forma de plágio.
-                </p>
-                <p class="mx-4 px-3 text-secondary text-justify">
-                    Sabemos que o plágio é uma violação séria da ética acadêmica. Com nossa orientação, você pode ter a
-                    certeza de que seu trabalho é autêntico e cumpre todas as leis de direitos autorais. A originalidade
-                    é a espinha dorsal de qualquer trabalho acadêmico de qualidade. Nossa equipe de especialistas está
-                    comprometida em ajudá-lo a criar trabalhos que são únicos, autênticos e totalmente livres de plágio.
-                </p>
-            </div>
-            <div class="direitoAutoral2">
-                <img class="d-block img p-3 mx-auto" src="/img/direitoAutoral2.jpg" alt="">
-            </div>
-            <div class="direitoFrase2">
-                <p class="mx-4 px-3 text-secondary text-justify">Nossos serviços de consultoria não apenas impulsionam
-                    sua pesquisa acadêmica, mas também o protegem contra riscos legais. Garantimos que seu trabalho
-                    esteja em conformidade com todas as leis de direitos autorais e evitamos qualquer forma de cópia não
-                    autorizada.
-                </p>
-            </div>
+
+        <!--Seção de chamada-->
+        <div class="centerColumn chamadaPreco">
+            <h2 class="font-weight-bold py-3 text-center text-info">Qualidade e aprovação garantidos</h2>
+            <h4 class="text-center text-info">A partir de:</h4>
+            <div class="bg-info font-weight-bold mb-5 text-center text-white chamada">R$ 300,00</div>
+            <h6 class="mb-3 text-center text-dark">Orçamento sem compromisso.</h6>
+            <h6 class="text-center text-dark">Trabalhos feitos sob medida, originais e de excelência!</h6>
         </div>
 
 
