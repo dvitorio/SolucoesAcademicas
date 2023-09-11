@@ -257,7 +257,7 @@ p {
 
 .chamadaPreco{
     width: 100vw;
-    height: 90vh;
+    height: 85vh;
 }
 
 .chamada{
@@ -265,8 +265,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 30vw;
-    height: 8rem;
+    height: 7rem;
     font-size: 4rem;
     font-family: 'Open Sans', sans-serif;
 }
@@ -278,6 +279,14 @@ p {
     width: 30vw;
     height: 8rem;
 }
+
+.chamadaPreco img{
+    max-width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#btnOrcamentoChamada{width: fit-content;}
 
 .rodape {
     background-color: rgb(18, 17, 17);

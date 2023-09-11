@@ -26,7 +26,7 @@
 
 
     <!--Modal de artigo-->
-    <div class="col-xl-4 modalArtigo container d-none shadow" id="modalArtigo">
+    <section class="col-xl-4 modalArtigo container d-none shadow" id="modalArtigo">
         <h5 class="font-weight-bold my-3 text-center">Artigo científico</h5>
         <p class="my-3 text-justify text-dark mx-2">O artigo científico é um documento mais curto (10 a 25
             laudas em média), focado em
@@ -41,10 +41,10 @@
         </p>
         <button class="btn btn-primary mb-3" id="btnContratarArtigo">Contratar um artigo</button>
         <button class="btn btn-danger mb-3" id="btnFecharModalArtigo">Fechar</button>
-    </div>
+    </section>
 
     <!--Modal de monografia-->
-    <div class="col-xl-4 modalMonografia container d-none shadow" id="modalMonografia">
+    <section class="col-xl-4 modalMonografia container d-none shadow" id="modalMonografia">
         <h5 class="font-weight-bold my-3 text-center">Monografia</h5>
         <p class="my-3 text-justify text-dark mx-2">A monografia é um trabalho acadêmico mais extenso (<b>mais
                 de 25 laudas, no mínimo</b>) e abrangente,
@@ -59,10 +59,10 @@
         </p>
         <button class="btn btn-primary mb-3">Iniciar uma monografia</button>
         <button class="btn btn-danger mb-3" id="btnFecharModalMonografia">Fechar</button>
-    </div>
+    </section>
 
     <!--Modal de Dissertação-->
-    <div class="col-xl-4 modalDissertacao container d-none shadow" id="modalDissertacao">
+    <section class="col-xl-4 modalDissertacao container d-none shadow" id="modalDissertacao">
         <h5 class="font-weight-bold my-3 text-center">Dissertação</h5>
         <p class="my-3 text-justify text-dark mx-2">Uma dissertação é um tipo de trabalho acadêmico que tem
             características distintas e é geralmente associada a programas de pós-graduação, como mestrado e
@@ -80,10 +80,10 @@
         </p>
         <button class="btn btn-primary mb-3">Orçamento</button>
         <button class="btn btn-danger mb-3" id="btnFecharModalDissertacao">Fechar</button>
-    </div>
+    </section>
 
     <!--Modal de projeto de TCC-->
-    <div class="col-xl-4 modalProjetoTCC container d-none shadow" id="modalProjetoTCC">
+    <section class="col-xl-4 modalProjetoTCC container d-none shadow" id="modalProjetoTCC">
         <h5 class="font-weight-bold my-3 text-center">Projeto de TCC</h5>
         <p class="my-3 text-justify text-dark mx-2">Um Projeto de Trabalho de Conclusão de Curso (TCC) é uma
             etapa crucial na preparação para a elaboração do TCC em si. É como se fosse a "planta" de construção de
@@ -95,7 +95,7 @@
         </p>
         <button class="btn btn-primary mb-3">Iniciar projeto de TCC</button>
         <button class="btn btn-danger mb-3" id="btnFecharModalProjetoTCC">Fechar</button>
-    </div>
+    </section>
 
 
     <!--Container geral do site-->
@@ -128,8 +128,6 @@
                                 <a class="dropdown-item" href="#dissertacao" id="btnDissertacao">Dissertação</a>
                                 <a class="dropdown-item" href="#monografia" id="btnMonografia">Monografia</a>
                                 <a class="dropdown-item" href="#projetoTCC" id="btnProjetoTCC">Projeto de TCC</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#trabalhoGeral">Trabalhos em geral</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -147,20 +145,22 @@
         </header>
 
         <!--Primeira página do site-->
-        <div class="primeiraPagina">
-            <div class="row">
+        <section class="primeiraPagina">
+            <article class="row">
                 <div class="col-xl-8 primeiraPaginaFrase">
                     <h1 class="text-center text-white">Consultoria especializada para seu trabalho
                         acadêmico</h1>
                 </div>
-                <div class="col-xl-3 formulario my-4 rounded shadow">
+                <article class="col-xl-3 formulario my-4 rounded shadow">
                     <form action="https://formspree.io/f/xeqbkbgp" method="post" id="meuFormulario">
                         <h6 class="py-3 text-white text-center">Faça um orçamento sem compromisso</h6>
                         <input class="form-control" type="text" name="nome" placeholder="Nome completo" id="nome">
-                        <input class="form-control my-4" type="email" name="_replyto" placeholder="E-mail principal" id="email">
+                        <input class="form-control my-4" type="email" name="_replyto" placeholder="E-mail principal"
+                            id="email">
                         <div class="row">
                             <div class="col-xl-5">
-                                <input class="form-control mb-4" type="tel" name="telefone" placeholder="Celular" id="telefone">
+                                <input class="form-control mb-4" type="tel" name="telefone" placeholder="Celular"
+                                    id="telefone">
                             </div>
                             <div class="col-xl-7">
                                 <select class="form-control mb-4" name="interesse" id="interesse">
@@ -190,12 +190,13 @@
                         </select>
                         <textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="4"
                             placeholder="Deixe aqui sua mensagem..."></textarea>
-                            <button class="btn btn-danger my-3 text-white" id="btnFormPrimeiraPagina" type="submit" onclick="limparCampos()">Entrar em
-                                contato</button>
+                        <button class="btn btn-danger my-3 text-white" id="btnFormPrimeiraPagina" type="submit"
+                            onclick="limparCampos()">Entrar em
+                            contato</button>
                     </form>
-                </div>
-            </div>
-        </div>
+                </article>
+            </article>
+        </section>
 
         <!--Seção de Equipe-->
         <div class="equipe py-4" id="equipe" data-aos="fade-up" data-aos-duration="1500">
@@ -287,10 +288,11 @@
                         plágio, e estritamente alinhados às suas necessidades. Não comprometa seu futuro acadêmico com
                         cópias de baixa qualidade. Escolha a excelência com a Soluções Acadêmicas hoje!
                     </p>
-                    <a class="btn btn-danger my-3">Solicite uma cotação gratuita</a>
+                    <a class="btn btn-danger my-3" href="#meuFormulario">Solicite uma cotação gratuita</a>
                 </div>
                 <div class="col-xl-3 container">
-                    <img class="d-block img my-3 mx-auto rounded shadow w-100" src="/img/img6.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">
+                    <img class="d-block img my-3 mx-auto rounded shadow w-100" src="/img/img6.jpg" alt=""
+                        data-aos="fade-up" data-aos-duration="1500">
                 </div>
             </div>
         </div>
@@ -344,20 +346,40 @@
 
         <!--Seção dos contadores-->
         <div class="contadores" id="contadores" data-aos="fade-up" data-aos-duration="1500">
-            <div class="contadorTitulo"><h3 class="pt-4 text-center text-info">Algumas de nossas marcas...</h3></div>
-            <div class="centerColumn contador1 container rounded shadow text-dark mb-2" id="contador1" data-aos="zoom-in" data-aos-duration="2000">Mais de <span class="contadorTexto font-weight-bold text-info" data-aos="zoom-in">150</span>artigos produzidos e publicados</div>
-            <div class="centerColumn contador2 container rounded shadow text-dark mb-2" id="contador2" data-aos="zoom-in" data-aos-duration="2000">Cerca de <span class="contadorTexto font-weight-bold text-info" data-aos="zoom-in">12</span>dissertações aprovadas</div>
-            <div class="centerColumn contador3 container rounded shadow text-dark mb-2" id="contador3" data-aos="zoom-in" data-aos-duration="2000">Aproximadamente <span class="contadorTexto font-weight-bold text-info" data-aos="zoom-in">120</span>monografias produzidas e aprovadas</div>
+            <div class="contadorTitulo">
+                <h3 class="pt-4 text-center text-info">Algumas de nossas marcas...</h3>
+            </div>
+            <div class="centerColumn contador1 container rounded shadow text-dark mb-2" id="contador1"
+                data-aos="zoom-in" data-aos-duration="2000">Mais de <span
+                    class="contadorTexto font-weight-bold text-info" data-aos="zoom-in">150</span>artigos produzidos e
+                publicados</div>
+            <div class="centerColumn contador2 container rounded shadow text-dark mb-2" id="contador2"
+                data-aos="zoom-in" data-aos-duration="2000">Cerca de <span
+                    class="contadorTexto font-weight-bold text-info" data-aos="zoom-in">12</span>dissertações aprovadas
+            </div>
+            <div class="centerColumn contador3 container rounded shadow text-dark mb-2" id="contador3"
+                data-aos="zoom-in" data-aos-duration="2000">Aproximadamente <span
+                    class="contadorTexto font-weight-bold text-info" data-aos="zoom-in">120</span>monografias produzidas
+                e aprovadas</div>
         </div>
 
 
         <!--Seção de chamada-->
         <div class="centerColumn chamadaPreco">
-            <h2 class="font-weight-bold py-3 text-center text-info">Qualidade e aprovação garantidos</h2>
-            <h4 class="text-center text-info">A partir de:</h4>
-            <div class="bg-info font-weight-bold mb-5 text-center text-white chamada">R$ 300,00</div>
-            <h6 class="mb-3 text-center text-dark">Orçamento sem compromisso.</h6>
-            <h6 class="text-center text-dark">Trabalhos feitos sob medida, originais e de excelência!</h6>
+            <div class="row">
+                <div class="col-xl-5">
+                    <img class="d-block img ml-3 w-100" src="/img/img_garota_chamada.jpg" alt="Garota">
+                </div>
+                <div class="col-xl-7 container">
+                    <h2 class="font-weight-bold py-3 text-center text-info">Qualidade e aprovação garantidos</h2>
+                    <h4 class="text-center text-info">A partir de:</h4>
+                    <div class="bg-info d-block mx-auto font-weight-bold my-5 text-center text-white chamada">R$ 300,00</div>
+                    <h6 class="mb-3 text-center text-dark">Orçamento sem compromisso.</h6>
+                    <a class="btn btn-success d-block my-3 mx-auto" id="btnOrcamentoChamada" href="#meuFormulario">Faça seu orçamento!</a>
+                    <h6 class="text-center text-dark">Trabalhos feitos sob medida, originais e de excelência!</h6>
+                    <h6 class="font-weight-bold text-center text-info">Parcelamento em até 8x</h6>
+                </div>
+            </div>
         </div>
 
 
@@ -371,8 +393,7 @@
                 <a href="https://www.linkedin.com/in/danielvitorio/" target="_blank"><i
                         class="fa-brands fa-linkedin-in text-secondary mx-3"></i></a>
             </div>
-
-            <h6 class="text-center text-white">Desenvolvido por <a href="">Daniel Vitorio</a></h6>
+            <h6 class="text-center text-white">Desenvolvido por <a href="https://www.linkedin.com/in/danielvitorio/" target="_blank">Daniel Vitorio</a></h6>
         </footer>
     </div>
 
