@@ -137,7 +137,7 @@
                             <a class="mx-5 nav-link text-white" href="#contadores">Resultados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-light mx-5 nav-link" href="#" id="btnMenuContato">Fazer orçamento</a>
+                            <a class="btn btn-light mx-5 nav-link text-dark" href="#meuFormulario">Fazer orçamento</a>
                         </li>
                     </ul>
                 </div>
@@ -146,56 +146,10 @@
 
         <!--Primeira página do site-->
         <section class="primeiraPagina">
-            <article class="row">
-                <div class="col-xl-8 primeiraPaginaFrase">
-                    <h1 class="text-center text-white">Consultoria especializada para seu trabalho
+                <div class="col primeiraPaginaFrase">
+                    <h1 class="text-justify text-white">Consultoria sob medida para seu trabalho
                         acadêmico</h1>
                 </div>
-                <article class="col-xl-3 formulario my-4 rounded shadow">
-                    <form action="https://formspree.io/f/xeqbkbgp" method="post" id="meuFormulario">
-                        <h6 class="py-3 text-white text-center">Faça um orçamento sem compromisso</h6>
-                        <input class="form-control" type="text" name="nome" placeholder="Nome completo" id="nome">
-                        <input class="form-control my-4" type="email" name="_replyto" placeholder="E-mail principal"
-                            id="email">
-                        <div class="row">
-                            <div class="col-xl-5">
-                                <input class="form-control mb-4" type="tel" name="telefone" placeholder="Celular"
-                                    id="telefone">
-                            </div>
-                            <div class="col-xl-7">
-                                <select class="form-control mb-4" name="interesse" id="interesse">
-                                    <option value="" disabled selected>Interesse</option>
-                                    <option value="artigo">Artigo</option>
-                                    <option value="dissertacao">Dissertação</option>
-                                    <option value="monografia">Monografia</option>
-                                    <option value="plano">Plano de aula</option>
-                                    <option value="projetoPesquisa">Projeto de pesquisa</option>
-                                    <option value="projetoViabilidade">Projeto de viabilidade</option>
-                                    <option value="outroTipoTrabalho">Outro tipo de trabalho</option>
-                                </select>
-                            </div>
-                        </div>
-                        <select class="form-control mb-4" name="curso" id="curso">
-                            <option value="" selected disabled>Curso</option>
-                            <option value="administracao">Administração</option>
-                            <option value="contabeis">Ciências Contábeis</option>
-                            <option value="economia">Economia</option>
-                            <option value="direito">Direito</option>
-                            <option value="enfermagem">Enfermagem</option>
-                            <option value="engenharia">Engenharia</option>
-                            <option value="fisioterapia">Fisioterapia</option>
-                            <option value="medicina">Medicina</option>
-                            <option value="pedagogia">Pedagogia</option>
-                            <option value="outro">Outro curso</option>
-                        </select>
-                        <textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="4"
-                            placeholder="Deixe aqui sua mensagem..."></textarea>
-                        <button class="btn btn-danger my-3 text-white" id="btnFormPrimeiraPagina" type="submit"
-                            onclick="limparCampos()">Entrar em
-                            contato</button>
-                    </form>
-                </article>
-            </article>
         </section>
 
         <!--Seção de Equipe-->
@@ -299,6 +253,7 @@
 
         <!--Seção de depoimentos-->
         <div class="depoimentos" id="depoimentos">
+            <div class="col"><h3 class="text-center text-secondary">O que dizem nossos clientes...</h3></div>
             <div class="depoimento my-4 mx-2 shadow" data-aos="fade-up" data-aos-duration="1500">
                 <h4 class="mb-2 pt-4 text-center text-secondary">Ana Maria S.</h4>
                 <h6 class="text-center text-secondary font-weight-bold">Enfermagem</h6>
@@ -332,7 +287,7 @@
                 </p>
             </div>
             <div class="depoimento my-4 mx-2 shadow" data-aos="fade-up" data-aos-duration="1500">
-                <h4 class="mb-2 pt-4 text-center text-secondary">Ana Maria S.</h4>
+                <h4 class="mb-2 pt-4 text-center text-secondary">Silvana J.</h4>
                 <h6 class="text-center text-secondary font-weight-bold">Direito</h6>
                 <p class="pt-3 px-4 text-justify text-dark">"O serviço de consultoria da Soluções Acadêmicas me deu a
                     oportunidade de equilibrar minha vida acadêmica e pessoal, porque eu estava enlouquecendo sem saber
@@ -347,7 +302,7 @@
         <!--Seção dos contadores-->
         <div class="contadores" id="contadores" data-aos="fade-up" data-aos-duration="1500">
             <div class="contadorTitulo">
-                <h3 class="pt-4 text-center text-info">Algumas de nossas marcas...</h3>
+                <h3 class="pt-4 text-center text-info">Algumas marcas...</h3>
             </div>
             <div class="centerColumn contador1 container rounded shadow text-dark mb-2" id="contador1"
                 data-aos="zoom-in" data-aos-duration="2000">Mais de <span
@@ -368,7 +323,7 @@
         <div class="centerColumn chamadaPreco">
             <div class="row">
                 <div class="col-xl-5">
-                    <img class="d-block img ml-3 w-100" src="/img/img_garota_chamada.jpg" alt="Garota">
+                    <img class="d-block img ml-3 w-100" src="/img/img3.jpg" alt="Capelo">
                 </div>
                 <div class="col-xl-7 container">
                     <h2 class="font-weight-bold py-3 text-center text-info">Qualidade e aprovação garantidos</h2>
@@ -381,6 +336,55 @@
                 </div>
             </div>
         </div>
+
+        <!--Seção do formulário-->
+        <div class="secaoFormulario" id="meuFormulario">
+            <article class="d-block mx-auto formulario mt-4 px-4 rounded shadow">
+                <form action="https://formspree.io/f/xeqbkbgp" method="post">
+                    <h6 class="py-3 text-white text-center">Faça um orçamento sem compromisso</h6>
+                    <input class="form-control" type="text" name="nome" placeholder="Nome completo" id="nome">
+                    <input class="form-control my-4" type="email" name="_replyto" placeholder="E-mail principal"
+                        id="email">
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <input class="form-control mb-4" type="tel" name="telefone" placeholder="Celular"
+                                id="telefone">
+                        </div>
+                        <div class="col-xl-7">
+                            <select class="form-control mb-4" name="interesse" id="interesse">
+                                <option value="" disabled selected>Interesse</option>
+                                <option value="artigo">Artigo</option>
+                                <option value="dissertacao">Dissertação</option>
+                                <option value="monografia">Monografia</option>
+                                <option value="plano">Plano de aula</option>
+                                <option value="projetoPesquisa">Projeto de pesquisa</option>
+                                <option value="projetoViabilidade">Projeto de viabilidade</option>
+                                <option value="outroTipoTrabalho">Outro tipo de trabalho</option>
+                            </select>
+                        </div>
+                    </div>
+                    <select class="form-control mb-4" name="curso" id="curso">
+                        <option value="" selected disabled>Curso</option>
+                        <option value="administracao">Administração</option>
+                        <option value="contabeis">Ciências Contábeis</option>
+                        <option value="economia">Economia</option>
+                        <option value="direito">Direito</option>
+                        <option value="enfermagem">Enfermagem</option>
+                        <option value="engenharia">Engenharia</option>
+                        <option value="fisioterapia">Fisioterapia</option>
+                        <option value="medicina">Medicina</option>
+                        <option value="pedagogia">Pedagogia</option>
+                        <option value="outro">Outro curso</option>
+                    </select>
+                    <textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="4"
+                        placeholder="Deixe aqui sua mensagem..."></textarea>
+                    <button class="btn btn-primary my-3 text-white" id="btnFormPrimeiraPagina" type="submit"
+                        onclick="limparCampos()">Entrar em
+                        contato</button>
+                </form>
+            </article>
+        </div>
+        
 
 
         <!--Seção rodapé-->

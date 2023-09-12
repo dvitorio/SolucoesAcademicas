@@ -63,13 +63,17 @@ html {
 .primeiraPagina {
     width: 100vw;
     height: 90vh;
-    background-image: url('/img/img3.jpg');
+    background-image: url('/img/img_garota_chamada.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .primeiraPaginaFrase h1 {
+    width: 40vw;
+    margin-top: 30vh !important;
+    margin-right: 45vw;
     font-size: 3rem;
+    text-align: left !important;
 }
 
 .primeiraPaginaFrase {
@@ -79,14 +83,8 @@ html {
     height: auto;
 }
 
-.formulario {
-    backdrop-filter: blur(15px);
-    min-height: 70vh;
-    width: 30vw;
-    border: 0.4px solid grey !important;
-}
-
 .equipe {
+    scroll-margin-top: 5rem;
     background-color: white;
     width: 100vw;
     min-height: 100vh;
@@ -128,6 +126,11 @@ p {
     min-height: 70vh;
     margin: 0.5rem;
     backdrop-filter: blur(10px);
+}
+
+.servico:hover{
+    transform: scale(1.05) !important;
+    transition: all 0.2s;
 }
 
 .servico a,
@@ -257,7 +260,7 @@ p {
 
 .chamadaPreco{
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
 }
 
 .chamada{
@@ -286,7 +289,24 @@ p {
     overflow: hidden;
 }
 
-#btnOrcamentoChamada{width: fit-content;}
+#btnOrcamentoChamada{width: fit-content}
+
+.secaoFormulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/img/direitoAutoral2.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.formulario {
+    backdrop-filter: blur(15px);
+    min-height: 70vh;
+    width: 50vw;
+}
 
 .rodape {
     background-color: rgb(18, 17, 17);
@@ -336,7 +356,7 @@ p {
     .primeiraPaginaImagem {
         width: 100vw;
         margin: 0 auto;
-        height: auto;
+        height: 70vh;
     }
 
     .primeiraPaginaImagem img {
@@ -350,7 +370,8 @@ p {
     }
 
     .formulario {
-        width: 96vw !important;
+        width: 97vw !important;
+        padding: 0 0.25rem !important;
         margin: 0 auto !important;
     }
 
