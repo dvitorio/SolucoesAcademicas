@@ -104,6 +104,10 @@ p {
     border-radius: 0.3125rem;
 }
 
+.equipe a{
+    width: fit-content;
+}
+
 .servicos {
     display: flex;
     align-items: center;
@@ -303,9 +307,10 @@ p {
 }
 
 .formulario {
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
     min-height: 70vh;
     width: 50vw;
+    border: 0.25px solid grey !important;
 }
 
 .rodape {
