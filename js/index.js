@@ -65,7 +65,26 @@ btnFecharModalProjetoTCC.addEventListener('click', ()=>{
 })
 
 
-
+//Controla o botão de scroll
+document.addEventListener("DOMContentLoaded", function () {
+    var scrollTopButton = document.getElementById("scrollTopButton");
+  
+    window.addEventListener("scroll", function () {
+      if (document.documentElement.scrollTop > 100) {
+        scrollTopButton.classList.add("show");
+      } else {
+        scrollTopButton.classList.remove("show");
+      }
+    });
+  
+    scrollTopButton.addEventListener("click", function () {
+      document.documentElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  });
+  
 
 
 

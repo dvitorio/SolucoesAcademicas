@@ -4,10 +4,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;700&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
+html {scroll-behavior: smooth}
 
+#scrollTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #43a878;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #scrollTopButton:hover {background-color: #0056b3}
+  
+  #scrollTopButton.show {display: block}
+  
 * {
     margin: 0;
     padding: 0;
@@ -29,20 +45,13 @@ html {
     z-index: 2200 !important;
 }
 
-.nav {
-    width: 100vw !important;
-}
+.nav {width: 100vw !important}
 
-.navbar {
-    background-color: black !important
-}
+.navbar {background-color: black !important}
 
-.navbar a:hover {
-    color: orange !important;
-}
-.nav-link{
-    font-size: 0.9rem !important;
-}
+.navbar a:hover {color: orange !important}
+
+.nav-link{font-size: 0.9rem !important}
 
 #btnMenuContato {
     border: none;
@@ -50,7 +59,7 @@ html {
 }
 
 #btnMenuContato:hover {
-    background-color: orangered;
+    background-color: orangered !important;
     border: none;
     color: white !important;
 }
@@ -90,9 +99,7 @@ html {
     min-height: 100vh;
 }
 
-p {
-    line-height: 2rem;
-}
+p {line-height: 2rem}
 
 .equipe p {
     width: 50vw;
@@ -120,9 +127,7 @@ p {
     overflow: hidden;
 }
 
-.servicos img {
-    max-width: 100%
-}
+.servicos img {max-width: 100%}
 
 .servico {
     border: 0.5px solid grey !important;
@@ -142,9 +147,7 @@ p {
     width: fit-content !important
 }
 
-.servico p {
-    text-shadow: 1px 1px 1px black !important
-}
+.servico p {text-shadow: 1px 1px 1px black !important}
 
 .call-to-action {
     background-color: white;
@@ -155,9 +158,7 @@ p {
     min-height: 90vh;
 }
 
-.call-to-action p {
-    line-height: 2.5rem;
-}
+.call-to-action p {line-height: 2.5rem}
 
 .modalArtigo,
 .modalMonografia,
@@ -258,9 +259,7 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-.contadorTexto{
-    font-size: 4.5rem !important;
-}
+.contadorTexto{font-size: 4.5rem !important}
 
 .chamadaPreco{
     width: 100vw;
@@ -514,7 +513,5 @@ p {
         width: 90vw;
         height: 4rem;
     }
-
-
 
 }
