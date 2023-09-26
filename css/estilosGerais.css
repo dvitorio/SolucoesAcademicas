@@ -5,25 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;700&display=swap');
 
 html {scroll-behavior: smooth}
-
-#scrollTopButton {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #43a878;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  #scrollTopButton:hover {background-color: #0056b3}
-  
-  #scrollTopButton.show {display: block}
-  
+ 
 * {
     margin: 0;
     padding: 0;
@@ -53,9 +35,11 @@ html {scroll-behavior: smooth}
 
 .nav-link{font-size: 0.9rem !important}
 
-#btnMenuContato {
-    border: none;
-    color: black !important;
+#btnOrcamentoMenu{background: linear-gradient(to right, #FF5733, #FFC300) !important}
+
+#btnOrcamentoMenu:hover{
+    background-color: #FF5733 !important;
+    color: white !important;
 }
 
 #btnMenuContato:hover {
@@ -107,7 +91,7 @@ p {line-height: 2rem}
 }
 
 .equipe img {
-    max-width: 50%;
+    max-width: 45%;
     border-radius: 0.3125rem;
 }
 
@@ -292,6 +276,17 @@ p {line-height: 2rem}
     overflow: hidden;
 }
 
+.bandeiras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+}
+
+.bandeiras img{
+    width: 12%;
+}
+
 #btnOrcamentoChamada{width: fit-content}
 
 .secaoFormulario{
@@ -315,7 +310,7 @@ p {line-height: 2rem}
 .rodape {
     background-color: rgb(18, 17, 17);
     width: 100vw;
-    height: 8rem;
+    min-height: 8rem;
 }
 
 .rodape h6 {
@@ -512,6 +507,14 @@ p {line-height: 2rem}
         font-size: 3rem;
         width: 90vw;
         height: 4rem;
+    }
+
+    .bandeiras{
+        width: 100vw;
+    }
+
+    .bandeiras img{
+        width: 100px !important;
     }
 
 }

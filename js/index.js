@@ -12,7 +12,6 @@ const modalArtigo = document.getElementById('modalArtigo');
 const modalDissertacao = document.getElementById('modalDissertacao');
 const modalMonografia = document.getElementById('modalMonografia');
 const modalProjetoTCC = document.getElementById('modalProjetoTCC');
-const btnContratarArtigo = document.getElementById('btnContratarArtigo');
 
 
 
@@ -63,32 +62,6 @@ btnFecharModalProjetoTCC.addEventListener('click', ()=>{
     modalProjetoTCC.classList.add('d-none');
     containerGeral.classList.remove('d-none');
 })
-
-
-//Controla o botão de scroll
-document.addEventListener("DOMContentLoaded", function () {
-    var scrollTopButton = document.getElementById("scrollTopButton");
-  
-    window.addEventListener("scroll", function () {
-      if (document.documentElement.scrollTop > 100) {
-        scrollTopButton.classList.add("show");
-      } else {
-        scrollTopButton.classList.remove("show");
-      }
-    });
-  
-    scrollTopButton.addEventListener("click", function () {
-      document.documentElement.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    });
-  });
-  
-
-
-
-
 
 
 

@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.seudominio/$1 [R,L]
+
+##### LOCAWEB - NAO REMOVER #####
+AddHandler php80-script .php
+suPHP_ConfigPath /home/solucaoacademica1/
+##### LOCAWEB - NAO REMOVER #####
+
